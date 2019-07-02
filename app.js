@@ -1,4 +1,7 @@
 'use strict';
+/*global $ */
+let mobileFlag = false;
+let browserFlag = false;
 
 // RGBA value generator
 function random_rgba() {
@@ -6,17 +9,19 @@ function random_rgba() {
   return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
-$(function() {
-  if($(window).width() <= 767){
+$(window).resize(function() {
+  if($(window).width() <= 767 && mobileFlag === false){
     $('div').each(function(){
       $(this).css('background-color', random_rgba());
-      console.log('this happens first');
+      mobileFlag = true;
+      browserFlag = false;
     });
   }
-  if($(window).width() > 767){
+  if($(window).width() > 767 && browserFlag === false){
     $('div').each(function(){
       $(this).css('background-color', random_rgba());
-      console.log('this happens too');
+      browserFlag = true;
+      mobileFlag = false;
     });
   }
 });

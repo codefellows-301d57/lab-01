@@ -11,3 +11,4 @@ SMACSS and Responsive Web Design
 * Matt Stuhring
 * Joachen Busch
 * Melfi Perez
+* Marisha Hoza - assisted with global flags for jquery call for background color change
