@@ -12,3 +12,11 @@ SMACSS and Responsive Web Design
 * Joachen Busch
 * Melfi Perez
 * Marisha Hoza - assisted with global flags for jquery call for background color change
+
+# lab-05b
+#### Task 1
+* Number and name of feature: Responsive Design
+* Estimate of time needed to complete: 2 hour
+* Start time: 10:00am
+* Finish time: 12:00pm
+* Actual time needed to complete: 1 hour 45 min
