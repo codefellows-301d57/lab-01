@@ -1,14 +1,12 @@
 #mainBody {
   margin: auto;
-  color: silver;
+  color: #222;
+  display: grid;
 }
 
 div {
   outline: #555 1px solid;
-  text-align: center;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
